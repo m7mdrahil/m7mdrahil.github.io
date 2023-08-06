@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLHZPZP72F"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', GTAG);
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Quest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border: 2px solid #333;
+            cursor: pointer;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+
+        /* Increase button size and spacing */
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlagQuest!</h1>
+    <h3>Can you guess the country each flag corresponds to?</h3>
+    <img id="flagImage" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_map_of_the_world.svg" alt="Flag Image">
+    <br>
+	<div id="gameContainer">
+        <div id="timerText"></div>
+		<div id="optionsContainer"></div>
+		<p id="resultText"></p>
+		<div id="scoreText">Score: 0</div>
+        <br><br>
+        <!-- Start Game Button -->
+        <button id="startGameButton" onclick="startGame()">Start Game</button>
+		<button id="shareScoreButton" onclick="shareScore()">Share Score</button>
+	</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
